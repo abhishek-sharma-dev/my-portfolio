@@ -1,0 +1,483 @@
+:root {
+    --black: #131110;
+    --orange: #ff922d;
+    --blue: #4066ff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+}
+
+#header {
+    background-image: url(./image/hero-img3.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------navbar------- */
+.navbar {
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar li a:hover {
+    color: var(--orange);
+}
+
+.navbar .resume-btn{
+    margin: 0px;
+    font-size: 14px;
+    padding: 8px 10px;
+    background-color: transparent;
+}
+
+/* ------hero section------- */
+.hero-container {
+    width: 100%;
+    padding: 2rem 10%;
+    display: flex;
+    margin:6rem 0;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.hero-text span {
+    font-size: 1.2rem;
+}
+
+/* ------- common width and padding for all main containers */
+.main-container {
+    width: 100%;
+    padding: 2rem 10%;
+    margin: 15px 0 10px 0;
+}
+
+
+/* -------about section-------- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-col-1 {
+    width: 40%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-col-2 {
+    width: 55%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.about-col-2 .about-para {
+    font-size: 14px;
+}
+
+.about-detail {
+    display: flex;
+    gap: 3rem;
+    margin: 10px 0 20px 0;
+}
+
+.about-detail .detail-title {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.detail-title::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--orange);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.detail-title.active-link::after {
+    width: 50%;
+}
+
+.about-detail-content ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.about-detail-content ul li span {
+    color: var(--orange);
+}
+
+.about-detail-content {
+    display: none;
+}
+
+.about-detail-content.active-content {
+    display: block;
+}
+
+
+/* ------project section--------- */
+
+.project-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0 20px 0;
+}
+
+.projects {
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.layer {
+    width: 100%;
+    height: 0%;
+    font-size: 14px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--orange));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    transition: 0.3s all ease-in;
+}
+
+.layer h3 {
+    margin-bottom: 20px;
+}
+
+.layer a {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: white;
+    color: var(--orange);
+    font-size: 18px;
+    line-height: 60px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    transition: 0.3s all ease-in;
+}
+
+.projects:hover .layer {
+    height: 100%;
+}
+
+.projects:hover img {
+    transform: scale(1.05);
+}
+
+/* style for all button on page */
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    color: var(--orange);
+    background-color: var(--black);
+    border: 1px solid var(--orange);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+/* ------contact section------- */
+.contact-col-left {
+    flex-basis: 35%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.contact-col-left p {
+    margin-bottom: 20px;
+}
+
+.contact-col-left p i {
+    color: var(--orange);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-media-icon a {
+    margin-right: 15px;
+    font-size: 30px;
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+.social-media-icon a:nth-child(1):hover {
+    color: var(--blue);
+}
+
+.social-media-icon a:nth-child(2):hover {
+    color: white;
+}
+
+.social-media-icon a:nth-child(3):hover {
+    color: darkmagenta;
+}
+
+.contact-col-right {
+    flex-basis: 60%;
+}
+
+.contact-col-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form input,
+form textarea {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #262626;
+    color: white;
+}
+
+.btn-2 {
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+/* --------footer section--------- */
+#footer {
+    background-color: #1a1817;
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* --------css for small screen-------- */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width:850px) {
+    #header {
+        background-image: url(./image/hero-resize-img3.png);
+    }
+
+    .hero-container {
+        margin: 6rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .hero-text span {
+        font-size: 16px;
+    }
+
+    nav .fa-solid {
+        display: block;
+    }
+
+    nav ul {
+        background-color: #ff922d;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        flex-direction: column;
+        transition: right 0.3s
+    }
+
+    /* -------about section-------- */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-1 {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .about-col-2 {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .about-col-2 .about-para {
+        font-size: 10px;
+    }
+
+    .about-detail {
+        gap: 20px;
+    }
+
+    .about-detail .detail-title {
+        font-size: 12px;
+    }
+
+    .about-detail-content ul li {
+        font-size: 12px;
+    }
+
+    /* ------project section--------- */
+    .project-lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    /* ------contact section------- */
+    .contact-col-left {
+        width: 100%;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .contact-col-left p {
+        font-size: 14px;
+    }
+
+    .contact-col-left p i {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .social-media-icon a {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .btn-2 {
+        margin-top: 10px;
+    }
+
+    .contact-col-right {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact-col-right form {
+        gap: 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .submit-btn {
+        width: 6rem;
+    }
+
+    /* -----footer section------ */
+
+    #footer {
+        font-size: 14px;
+    }
+
+}

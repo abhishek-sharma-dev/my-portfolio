@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar">
+                <span class="logo"><a href="#"><i style="color: var(--orange);">A</i>bhishek</a></span>
+                <ul id="sidemenu-bar">
+                    <i class="fa-solid fa-xmark" style="font-size: 22px;" onclick="closeMenu()"></i>
+                    <li><a href="#header" class="navbar-list">Home</a></li>
+                    <li><a href="#about" class="navbar-list">About Me</a></li>
+                    <li><a href="#project" class="navbar-list">Projects</a></li>
+                    <li><a href="#contact" class="navbar-list">Contact</a></li>
+                    <a href="./downloadCV/Abhishek Resume.pdf" download class="btn resume-btn btn-2">Resume</a>
+                </ul>
+                <i class="fa-solid fa-bars" style="font-size: 22px;" onclick="openMenu()"></i>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hi, I'm <br> Abhishek Sharma</h1>
+                <span>Frontend developer</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  about section  -->
+    <div id="about" class="main-container">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./image/user-img.png" alt="user-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title about-title ">About Me</h1>
+                    <span class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam est nam
+                        nemo minima ipsam
+                        harum veniam eius magnam sapiente minus, ad, blanditiis deleniti, amet ratione veritatis atque
+                        quibusdam! Nesciunt, minima!</span>
+
+                    <div class="about-detail">
+                        <span class="detail-title active-link" onclick="openAboutDetailContent('skills')">Skills</span>
+                        <span class="detail-title" onclick="openAboutDetailContent('experience')">Experience</span>
+                        <span class="detail-title" onclick="openAboutDetailContent('education')">Education</span>
+                    </div>
+
+                    <div class="about-detail-content active-content" id="skills">
+                        <ul>
+                            <li><span>Language known:</span><br>C Programming, JavaScript</li>
+                            <li><span>Web Technologies:</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Learning:</span><br>ReactJs, Wordpress</li>
+                            <li><span>Strong Skills:</span><br>HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-detail-content" id="experience">
+                        <ul>
+                            <li>Fresher</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-detail-content" id="education">
+                        <ul>
+                            <li><span>2016:</span><br>SSC from Maharashtra state board</li>
+                            <li><span>2019:</span><br>Diploma (Electronics and Telecommunication Engineering) from
+                                Vivekanand Education Society's Polytechnic</li>
+                            <li><span>2019</span><br>Bachelor of Engineering (Electronics Engineering) from Vivekanand
+                                Education Society's Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- project section -->
+    <div id="project" class="main-container">
+
+        <div class="project-container">
+            <h1 class="title project-title ">My Projects</h1>
+
+            <div class="project-lists">
+
+                <div class="projects">
+                    <img src="./image/project-img/weather-app-img.png" alt="img">
+
+                    <div class="layer">
+                        <h3>Weather app</h3>
+                        <p>Stay ahead of the forecast with our user-friendly weather app, delivering real-time updates.
+                        </p>
+                        <a href="https://abhi-weather-react.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <img src="./image/project-img/healthmate-app-img.png" alt="img">
+                    <div class="layer">
+                        <h3>HealthMate app</h3>
+                        <p>Empower your health journey with HealthMate: your one-stop app to find doctors, hospitals,
+                            and stay informed with informative articles on various diseases for a healthier life.</p>
+                        <a href="https://healthmate-react.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <img src="./image/project-img/todo-list-img.png" alt="img">
+                    <div class="layer">
+                        <h3>Todo-List App</h3>
+                        <p>Stay ahead of the forecast with our user-friendly weather app, delivering real-time updates.
+                        </p>
+                        <a href="https://abhishek-sharma-dev.github.io/todo-list/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="btn see-more-btn">See More</button>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact" class="main-container">
+        <div class="contact-container">
+            <h1 class="title contact-title ">Contact Me</h1>
+            <div class="row">
+                <div class="contact-col-left">
+
+                    <p><i class="fa-solid fa-envelope"></i> abhisheksharma10520@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9653320847</p>
+
+                    <div class="social-media-icon">
+                        <a href="https://www.linkedin.com/in/abhishek-sharma-10520-9983a8138/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/abhishek-sharma-dev" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/abhishek_sharma.__/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./downloadCV/Abhishek Resume.pdf" download class="btn download-cv-btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-col-right">
+                    <form>
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <button class="btn submit-btn btn-2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div id="footer" class="main-container">
+        <footer>
+            <span>Copyright © Abhishek. Made by Abhishek Sharma</span>
+        </footer>
+    </div>
+
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
