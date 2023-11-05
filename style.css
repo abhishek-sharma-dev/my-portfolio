@@ -188,6 +188,7 @@ body {
 
 .projects img {
     width: 100%;
+    border-radius: 10px;
     display: block;
     transition: 0.3s;
 }
@@ -378,7 +379,11 @@ nav .fa-solid {
         height: 100vh;
         padding-top: 50px;
         flex-direction: column;
-        transition: right 0.3s
+        transition: right 0.3s;
+        z-index: 1;
+    }
+    .navbar li a:hover{
+        color: var(--black);
     }
 
     /* -------about section-------- */

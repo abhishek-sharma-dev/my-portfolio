@@ -24,3 +24,7 @@ function closeMenu() {
     sidemenuBar.style.right = '-200px'
 
 }
+
+function seeMoreProject() {
+    alert("More project will be add soon")
+}
