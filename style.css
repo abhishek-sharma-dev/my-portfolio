@@ -349,41 +349,9 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:600px) {
     #header {
         background-image: url(./image/hero-resize-img3.png);
-    }
-
-    .hero-container {
-        margin: 6rem 0;
-    }
-
-    .hero-text h1 {
-        font-size: 20px;
-    }
-
-    .hero-text span {
-        font-size: 16px;
-    }
-
-    nav .fa-solid {
-        display: block;
-    }
-
-    nav ul {
-        background-color: #ff922d;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        flex-direction: column;
-        transition: right 0.3s;
-        z-index: 1;
-    }
-    .navbar li a:hover{
-        color: var(--black);
     }
 
     /* -------about section-------- */
@@ -485,4 +453,37 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+}
+@media only screen and (max-width:850px) {
+    .hero-container {
+        margin: 6rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .hero-text span {
+        font-size: 16px;
+    }
+
+    nav .fa-solid {
+        display: block;
+    }
+
+    nav ul {
+        background-color: #ff922d;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        flex-direction: column;
+        transition: right 0.3s;
+        z-index: 1;
+    }
+    .navbar li a:hover{
+        color: var(--black);
+    }
 }
