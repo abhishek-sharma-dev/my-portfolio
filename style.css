@@ -573,6 +573,10 @@ nav .fa-solid {
         color: var(--black);
     }
 
+    .contact-col-right {
+        margin-top: 20px;
+    }
+
     /* ----resume section------ */
 
     .resume-title{
