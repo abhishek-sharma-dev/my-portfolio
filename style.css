@@ -3,7 +3,8 @@
     --orange: #ff922d;
     --blue: #4066ff;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -62,7 +63,7 @@ body {
     color: var(--orange);
 }
 
-.navbar .resume-btn{
+.navbar .resume-btn {
     margin: 0px;
     font-size: 14px;
     padding: 8px 10px;
@@ -74,7 +75,7 @@ body {
     width: 100%;
     padding: 2rem 10%;
     display: flex;
-    margin:6rem 0;
+    margin: 6rem 0;
 }
 
 .hero-text h1 {
@@ -333,6 +334,89 @@ form textarea {
     margin-top: 20px;
 }
 
+/* -------resume section------- */
+
+.resume-container {
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid var(--orange);
+}
+.hrTag {
+    border: 1px solid var(--orange);
+    margin: 20px 0;
+}
+.resume-title{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 0px 0 30px 0;
+}
+
+.sub-title{
+    font-size: 24px;
+}
+
+.resume-row {
+    margin-top: 20px;
+}
+
+.resume-container span {
+    font-size: 18px;
+}
+
+.resume-contact {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.resume-contact p i {
+    color: var(--orange);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.site-link a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+.site-link a:nth-child(1) {
+    color: var(--blue);
+}
+.site-link a:nth-child(2) {
+  color: rgb(172, 168, 168);
+}
+.site-link a:nth-child(3) {
+    color: rgb(202, 24, 202);
+}
+.resume-para{
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 2px solid var(--orange);
+    border-collapse: collapse;
+
+}
+th{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+td{
+    padding: 10px;
+}
+
+.resume-row-content ul{
+    list-style: none;
+}
+
+.resume-row-content ul li span{
+    color: var(--orange);
+}
+
+
+
 /* --------footer section--------- */
 #footer {
     background-color: #1a1817;
@@ -454,6 +538,7 @@ nav .fa-solid {
     }
 
 }
+
 @media only screen and (max-width:850px) {
     .hero-container {
         margin: 6rem 0;
@@ -483,7 +568,42 @@ nav .fa-solid {
         transition: right 0.3s;
         z-index: 1;
     }
-    .navbar li a:hover{
+
+    .navbar li a:hover {
         color: var(--black);
+    }
+
+    /* ----resume section------ */
+
+    .resume-title{
+        font-size: 24px;
+        margin: 0px 0 20px 0;
+    }
+    .sub-title{
+        font-size: 18px;
+    }
+    .resume-container span {
+        font-size: 14px;
+    }
+    .resume-contact {
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+    }
+    .resume-contact p {
+        font-size: 12px;
+    }
+    .resume-contact p i {
+        margin-right: 3px;
+        font-size: 14px;
+    }
+    .site-link a{
+        font-size: 14px;
+    }
+    .resume-para{
+       font-size: 14px;
+    }
+    table, th, td {
+       font-size: 8px;
     }
 }
