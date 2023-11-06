@@ -433,7 +433,7 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:650px) {
     #header {
         background-image: url(./image/hero-resize-img3.png);
     }
